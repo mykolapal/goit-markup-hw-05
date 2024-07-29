@@ -612,7 +612,7 @@ padding-bottom: 120px;
 
         .modal{
           position: absolute;
-          padding: 24px;
+          padding: 72px 24px 24px 24px;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -636,25 +636,52 @@ padding-bottom: 120px;
                   
                   position: absolute;
                   display: flex;
+                  align-items: center;
+                  justify-content: center;
                   top: 24px;
                   right: 24px;
                   width: 24px;
                   height: 24px;
+                  border-radius: 50%;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                  padding: 0;
+                  background-color: #e7e9fc;
+                  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
+
+                .modal-close-btn:hover,
+                .modal-close-btn:focus {
+                  background-color: #404bbf;
+                  border: none;
+                  
+                }
+
+                .modal-close-btn-icon{
+                  fill: #2e2f42;
+                  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                .modal-close-btn:hover .modal-close-btn-icon,
+                .modal-close-btn:focus .modal-close-btn-icon{
+                  fill: #fff;
+
+                }
+
+
+
+
+
+
+                                
                 
                 .backdrop-form-title{
-                  text-align: left;
+                  text-align: center;
                   margin-bottom: 16px;
-                  right: 24px;
-                  left: 24px;
-                  top: 72px;
-                  align-items: flex-start;
-
                   font-weight: 500;
                   font-size: 16px;
                   line-height: 150%;
                   letter-spacing: 0.02em;
-                  text-align: center;
                   color: #2e2f42;
                 }
 
@@ -670,7 +697,7 @@ padding-bottom: 120px;
                   font-size: 18px;
                 }
 
-                ..modal-input::placeholder{
+                .modal-input::placeholder{
                   color: #4d5ae5;
                   font-size: 12px;
                 }
