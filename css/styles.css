@@ -593,7 +593,7 @@ padding-bottom: 120px;
           width: 100%;
           height: 100%;
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-          background-color: rgba(46, 47, 66, 0.4),
+          background-color: rgba(46, 47, 66, 0.4);
           
 
           opacity: 0;
@@ -601,8 +601,7 @@ padding-bottom: 120px;
           pointer-events: none;
           transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        }
+}
 
         .backdrop.is-open{
           opacity: 1;
@@ -616,14 +615,12 @@ padding-bottom: 120px;
           padding: 24px;
           top: 50%;
           left: 50%;
-          
-
+          transform: translate(-50%, -50%);
           width: 408px;
-          height: 584px;
           min-height: 584px;
           border-radius: 4px;
 
-          transform: translate(-50%, -50%);
+          
 
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
           background: #fcfcfc;
@@ -667,6 +664,13 @@ padding-bottom: 120px;
                   border-radius: 4px;
                   height: 40px;
                   background-color: transparent;
+                  padding-left: 38px;
+                  padding-right: 24px;
+                  margin-bottom: 18px;
+                  font-size: 18px;
+                }
 
-
+                ..modal-input::placeholder{
+                  color: #4d5ae5;
+                  font-size: 12px;
                 }
