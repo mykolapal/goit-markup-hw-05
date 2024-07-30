@@ -584,6 +584,74 @@ padding-bottom: 120px;
       fill: #f4f4fd;
     }
 
+    .subscribe{
+      margin-left: 80px;
+
+    }
+
+    .text-subscribe{
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+
+    .form-subscribe{
+      display: flex;
+      gap: 24px;
+    }
+
+    .subscribe-input{
+      border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        filter: drop-shadow(0 4px 4px 0 rgba(0, 0, 0, 0.15));
+        padding-left: 16px;
+        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .subscribe-button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      padding: 8px 24px;
+      min-width: 165px;
+      height: 40px;
+      border: none;
+      background-color: #4d5ae5;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .subscribe-icon{
+      fill: #fff;
+      margin-left: 16px;
+    }
+
+    .subscribe-button:hover, 
+    .subscribe-button:focus{
+      background-color: #404BBF;
+    }
+        
+
+
+
         /* ======= BACKDROP STYLES ======= */
 
         .backdrop{
@@ -679,13 +747,13 @@ padding-bottom: 120px;
                 }
 
                 .form-field{
-                margin-bottom: 18px;
+                margin-bottom: 8px;
 
                 }
 
                 .modal-input{
                   width: 100%;
-                  border: 1px solid #4d5ae5;
+                  border: 1px solid rgba(46, 47, 66, 0.4);
                   border-radius: 4px;
                   height: 40px;
                   background-color: transparent;
@@ -693,6 +761,7 @@ padding-bottom: 120px;
                   padding-right: 24px;
                   outline: transparent;
                   font-size: 18px;
+                  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
 
                 .modal-input:focus{
@@ -700,7 +769,7 @@ padding-bottom: 120px;
                 }
 
                 .modal-input:focus + .modal-icon{
-                  stroke: #4d5ae5;
+                  fill: #4d5ae5;
                 }
 
                 .modal-input::placeholder, 
@@ -710,8 +779,7 @@ padding-bottom: 120px;
                 }
 
                 .modal-icon{
-                  fill: transparent;
-                  stroke: #2e2f42;
+                  fill: #2e2f42;
                   position: absolute;
                   left: 16px;
                   top: 50%;
@@ -725,15 +793,18 @@ padding-bottom: 120px;
 
                 .modal-textarea{
                   width: 100%;
-                  border: 1px solid #4d5ae5;
+                  border: 1px solid rgba(46, 47, 66, 0.4);
                   border-radius: 4px;
                   height: 120px;
                   background-color: transparent;
                   padding-left: 16px;
                   padding-right: 16px;
+                  padding-top: 8px;
+                  padding-bottom: 8px;
                   outline: transparent;
                   font-size: 18px;
                   resize: none;
+
 
                   font-weight: 400;
                   font-size: 12px;
@@ -742,4 +813,102 @@ padding-bottom: 120px;
                   color: rgba(46, 47, 66, 0.4);
                   
                   }
+
+                  .checkbox{
+                    margin-bottom: 24px;
+
+                  }
+
+                  .modal-checkbox-text{
+                    
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 117%;
+                    letter-spacing: 0.04em;
+                    color: #8e8f99;
+        
+
+                  }
+
+                   .checkbox-block{
+                    display: inline-flex;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 2px;
+                    border: 1px solid rgba(46, 47, 66, 0.4);
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 8px;
+                    fill: transparent;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                   }
+
+                   .checkbox-icon{
+                    fill: #f4f4fd;
+
+                   }
+
+                   .input-checkbox:checked + .modal-checkbox-text > .checkbox-block{
+                    background-color: #404bbf;
+                    border: none;
+                    fill: #f4f4fd;
+
+
+
+                   }
+
+
+
+                   .form-label{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 117%;
+                    letter-spacing: 0.04em;
+                    color: #8e8f99;
+                    margin-bottom: 4px;
+                    display: block;
+                   }
+
+                   .form-textarea{
+                    margin-bottom: 16px;
+                   }
+
+                   .text-privacy-policy{
+                    
+                    text-decoration: underline;
+                    color: #4d5ae5;
+                   }
+
+                   .modal-button{
+                    border-radius: 4px;
+                    padding: 16px 32px;
+                    min-width: 169px;
+                    display: block;
+                    margin: 0 auto;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                    background-color: #4d5ae5;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.04em;
+                    color: #fff;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    border: none;
+                    cursor: pointer;
+                    
+
+                   }
+
+                   .modal-button:hover, 
+                   .modal-button:focus{
+                    background-color: #404bbf;
+
+                   }
+
+
+
+                                     
                 
